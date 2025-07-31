@@ -1,22 +1,29 @@
 {
   "manifest_version": 3,
   "name": "LexiDrop",
-  "version": "0.0.1",
-  "description": "A minimal Chrome extension skeleton for LexiDrop.",
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icon16.png",
-      "32": "icon32.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
-    }
+  "version": "1.0",
+  "description": "选中文字右键发送到侧边栏",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "sidePanel"
+  ],
+  "background": {
+    "service_worker": "background.js"
   },
-  "permissions": [],
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "icons": {
     "16": "icon16.png",
     "32": "icon32.png",
     "48": "icon48.png",
     "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "LexiDrop"
   }
 } 
