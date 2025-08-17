@@ -1,0 +1,18 @@
+{
+    "name": "lexidrop",
+    "version": "1.0.0",
+    "description": "A Chrome extension that captures selected text, analyzes new words via GPT, and stores them in a Notion dictionary.",
+    "author": "aabluesnan",
+    "license": "MIT",
+    "scripts": {
+      "test": "echo \"No tests defined. Skipping...\""
+    },
+    "keywords": [
+      "chrome-extension",
+      "notion",
+      "gpt",
+      "vocabulary",
+      "language-learning"
+    ]
+  }
+  
